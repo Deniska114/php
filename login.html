@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Вхід</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css">
+  <style>
+    body {
+      background-color: #f2f4f8;
+    }
+
+    main {
+      max-width: 400px;
+      margin: 10vh auto;
+      padding: 2rem;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    form p {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    button {
+      width: 100%;
+      font-weight: bold;
+    }
+
+    a {
+      color: #3a7bd5;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h2>Вітаємо в Coffee Lover</h2>
+
+    <form id="loginForm">
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="you@example.com" required>
+      <div id="emailError" class="error"></div>
+
+      <label for="login">Логін</label>
+      <input type="text" id="login" placeholder="your_login123" required>
+      <div id="loginError" class="error"></div>
+
+      <label for="password">Пароль</label>
+      <input type="password" id="password" placeholder="••••••••" required>
+      
+      <label for="phone">Телефон</label>
+      <input type="text" id="phone" placeholder="+380931234567" required>
+      <div id="phoneError" class="error"></div>
+
+      <p>
+        <a href="https://i.ytimg.com/vi/OPCmEN26hoI/maxresdefault.jpg">Забули пароль?</a> | <a href="#">Зареєструватись</a> | <a href="index.html">Назад</a>
+      </p>
+
+      <button type="submit">Увійти</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
