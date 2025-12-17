@@ -86,8 +86,8 @@ class Teacher extends User
     }
 }
 
-$student = new Student('Іван Петренко', 'ivan.petrenko@example.com', 'КН-21');
-$teacher = new Teacher('Олена Іваненко', 'olena.ivanenko@example.com', 'Веб-програмування');
+$student = new Student('Денис Левенко', 'Denis.Levenko@example.com', 'КН-21');
+$teacher = new Teacher('Костянтин Сурков', 'Kostia.Surkov@example.com', 'Веб-програмування');
 
 function printUserInfo(User $user): void
 {
@@ -108,6 +108,7 @@ function printUserInfo(User $user): void
 echo '<h1>Користувачі системи</h1>';
 printUserInfo($student);
 printUserInfo($teacher);
+
 
 
 
